@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="titles">
+            <div class="left-title">JS Quiz</div>
+            <div class="right-title">Total Questions: <span id="tque"></span></div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="quiz" class="quiz-body">
+                        <form name="quiz-form" onSubmit="">
+                            <fieldset class="form-group">
+                                <h4><span id="qid">1.</span> <span id="question"></span></h4>
+                                <div class="option-block-container" id="question-options">
+                                </div>
+                            </fieldset>
+                            <button name="next" id="next" class="btn">Next</button>
+                        </form>
+                    </div>
+                    <div id="result" class="hidden">
+                        <h4>Your Score: <span id="score"></span>/<span id="total"></span></h4>
+                        <button id="restart" class="btn">Restart Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
