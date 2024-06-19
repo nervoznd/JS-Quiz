@@ -7,6 +7,11 @@ body {
     color: #333;
 }
 
+body.dark-theme {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
 /* Стили для header */
 .header {
     display: flex;
@@ -15,6 +20,11 @@ body {
     background-color: #007bff;
     color: white;
     padding: 15px 20px;
+}
+
+body.dark-theme .header {
+    background-color: #3d3d3d;
+    color: #f8f9fa;
 }
 
 .header .titles {
@@ -34,6 +44,11 @@ body {
     content: "";
     clear: both;
     display: table;
+}
+
+.theme-switcher {
+    position: absolute;
+    right: 30px;
 }
 
 /* Стили для content */
@@ -59,6 +74,10 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme .quiz-body {
+    background-color: #3d3d3d;
 }
 
 .quiz-body h4 {
@@ -87,17 +106,34 @@ body {
     transition: background-color 0.3s;
 }
 
+body.dark-theme .btn {
+    background-color: #2e4a68;
+}
+
 .btn:hover {
     background-color: #0056b3;
+}
+
+body.dark-theme .btn:hover {
+    background-color: #1f2e3f;
 }
 
 .btn.correct {
     background-color: #28a745;
 }
 
+body.dark-theme .btn.correct {
+    background-color: #367745;
+}
+
 .btn.incorrect {
     background-color: #dc3545;
 }
+
+body.dark-theme .btn.incorrect {
+    background-color: #7c3940;
+}
+
 
 .hidden {
     display: none;

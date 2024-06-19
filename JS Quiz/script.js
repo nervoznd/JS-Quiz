@@ -45,7 +45,6 @@ const scoreDisplay = document.getElementById('score');
 const totalDisplay = document.getElementById('total');
 const restartButton = document.getElementById('restart');
 
-
 function loadQuestion(index) {
     const q = questions[index];
     qid.textContent = (index + 1) + '.';
@@ -118,6 +117,22 @@ restartButton.addEventListener('click', function (e) {
     quizContainer.classList.remove('hidden');
     resultContainer.classList.add('hidden');
     loadQuestion(currentQuestionIndex);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleBtn = document.getElementById('theme-toggle');
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.body.classList.toggle('dark-theme', savedTheme === 'dark');
+    }
+
+    themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        
+        const isDarkTheme = document.body.classList.contains('dark-theme');
+        localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+    });
 });
 
 loadQuestion(currentQuestionIndex);
