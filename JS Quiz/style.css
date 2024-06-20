@@ -94,6 +94,15 @@ body.dark-theme .quiz-body {
     border: none;
 }
 
+/* Таймер */
+.timer {
+    padding-left: 15px;
+}
+
+.timer.ends {
+    color: #dc3545;
+}
+
 /* Стили для кнопок */
 .btn {
     background-color: #007bff;
