@@ -1,0 +1,33 @@
+:root {
+    /* FONTS */
+    --font-1: "Roboto", sans-serif;
+
+    --weight-light: 300;
+    --weight-regular: 400;
+    --weight-bold: 700;
+
+    /* COLORS */
+    --color-white-100: rgba(255, 255, 255, 1);
+    --color-white-75: rgba(255, 255, 255, 0.75);
+    --color-white-50: rgba(255, 255, 255, 0.50);
+    --color-white-25: rgba(255, 255, 255, 0.25);
+    --color-white-10: rgba(255, 255, 255, 0.10);
+
+    --color-black-100: rgba(0, 0, 0, 1);
+    --color-black-75: rgba(0, 0, 0, 0.75);
+    --color-black-50: rgba(0, 0, 0, 0.50);
+    --color-black-25: rgba(0, 0, 0, 0.25);
+    --color-black-10: rgba(0, 0, 0, 0.10);
+    
+    --color-light-theme-light: rgba(223, 249, 251, 1.0);
+    --color-light-theme-dark: rgba(199, 236, 238, 1.0);
+    --color-light-theme-red: rgba(255, 121, 121, 1.0);
+    --color-light-theme-green: rgba(186, 220, 88, 1.0);
+    --color-light-theme-gray: rgba(83, 92, 104, 1.0);
+
+    --color-dark-theme-light: rgba(48, 51, 107, 1.0);
+    --color-dark-theme-dark: rgba(19, 15, 64, 1.0);
+    --color-dark-theme-red: rgba(235, 77, 75, 1.0);
+    --color-dark-theme-green: rgba(106, 176, 76,1.0);
+    --color-dark-theme-gray: rgba(149, 175, 192, 1.0);
+}
